@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>mochaとchaiの使用例</title>
+
+<!-- CDNからmochaとchaiを読み込む -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mocha/2.5.3/mocha.min.css">
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mocha/2.5.3/mocha.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/chai/3.5.0/chai.min.js"></script>
+
+<!-- テスト対象のファイル -->
+<script src="dist/my-plugin.js"></script>
+
+<!-- テストの内容が記述されたファイル -->
+<script src="test/my-test.js"></script>
+
+<script>
+// テストを実行する
+window.onload = function () {
+  myTest();
+};
+</script>
+</head>
+<body>
+<!-- 必須: テスト結果が表示される要素 -->
+<div id="mocha"></div>
+</body>
+</html>
